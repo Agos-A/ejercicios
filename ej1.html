@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ej1</title>
-    
+    <title>Document</title>
 </head>
 <body>
     
-<h3>Calcular el cuadrado</h3>
-<p>Crear una flecha que reciba un numero y devuelva su cuadrado. Luego muestra el resultado usando console.log() y prueba con distintos numeros.</p>
-<script>
-let num=prompt("texto");
-var cuadrado=num*num;
-console.log(cuadrado);
-alert(cuadrado);     
-</script>
+ <button onclick="ej1()">ejercicio 1</button>
+<p>el cuadrado es: </p>
+    <p id="resultado1"></p>
 
+    <script>
+ const ej1=()=>{
+
+    let num=prompt("texto");
+    const elem= document.getElementById("resultado1");
+    let r=num*num;
+    elem.innerHTML = r;
+ }
+    </script>
 </body>
 </html>
