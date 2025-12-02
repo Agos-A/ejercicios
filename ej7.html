@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="ej7()">ejercicio5</button>
+<div id="contenedor"></div>
+
+    <script>
+        
+        const ej7=()=>{
+        let palabras=prompt("palabras");
+        let filtrar= palabras.filter(palabras=> palabra.length >4);
+        let contenedor = document.getElementById('contenedor');
+        filtradas.forEach(palabras => {
+
+            let p = document.createElement('p');
+            p.textContent = palabras.toUpperCase();
+            contenedor.appendChild(p);
+        });
+        }
+    </script>
+
+</body>
+</html>
