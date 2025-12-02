@@ -6,22 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Convertir texto</h3>
     
-    <p>Crear funcion flecha que reciba un texto y lo devuelva en mayuscula y sin espacios al inicio ni al final(trim())</p>
-    <button onclick="ej2()">ejercicio 2</button>
-    
-<script>
+    <button onclick="ej2()">ejercicio2</button>
+    <p id="texto1">hola</p>
+    <p>texto cambiado: </p>
+    <p id="texto2"></p>
 
-    const ej2=()=>{
-
-    let texto=prompt("texto");
-    let texto2= texto.toUpperCase(texto).trim(texto);  
-    console.log(texto2);
-    alert(texto2);  
-}
-
-</script>
+    <script>
+        const ej2=()=>{
+        const elem= document.getElementById("texto2");
+        elem.innerHTML = "chau";
+        }
+    </script>
 
 
 </body>
